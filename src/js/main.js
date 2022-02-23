@@ -216,11 +216,7 @@ modalBtns.forEach(modalBtn => {
 });
 modalBg.addEventListener('click', modalToggle);
 function modalToggle(){
-    if (this.dataset.source){
-        console.log(this.dataset.source);
-        modalSource.value = this.dataset.source;
-
-    }
+    modalSource.value = this.dataset.source;
     document.body.classList.toggle('modal--show');
 }
 
