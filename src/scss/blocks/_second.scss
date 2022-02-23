@@ -1,0 +1,30 @@
+.second{
+    position: relative;
+    padding: 50px var(--container) 0;
+    &__bg{
+        position: absolute;
+        line-height: 0;
+        z-index: 15;
+        &--1{
+            top: 0;
+            left: 0;
+            width: 25vw;
+            @media screen and (min-width: 768px) {
+                
+            }
+        }
+        &--2{
+            bottom: -90px;
+            right: 0;
+            width: 40vw;
+            @media screen and (min-width: 768px) {
+                
+            }
+        }
+    }
+    &__scroll{
+        margin-top: 45px;
+        bottom: -70px;
+    }
+    
+}

@@ -1,0 +1,126 @@
+.seventh{
+    position: relative;
+    padding: var(--smallPad) var(--container) var(--smallPad);
+    background-color: #616161;
+    &__slider{
+        margin-top: 55px;
+        @media screen and (min-width: 1640px) {
+            margin-top: 75px;
+        }
+        
+    }
+    &__btn-con{
+        margin-top: 50px;
+        @media screen and (min-width: 1640px) {
+            margin-top: 65px;
+        }
+    }
+    &__btn{
+        width: 100%;
+        display: block;
+        margin: 0 auto;
+        @media screen and (min-width: 1024px) {
+            width: fit-content;
+        }
+    }
+    &__divider{
+        position: absolute;
+        left: 0;
+        z-index: 5;
+        width: 100%;
+        &--top{
+            top: -150px;
+        }
+        &--bottom{
+            bottom: -160px;
+            transform-origin: center;
+            transform: rotate(180deg);
+        }
+    }
+    &__scroll{
+        margin-top: 30px;
+    }
+}
+.seventh-slide{
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+    @media screen and (min-width: 1024px) {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 30px;
+
+    }
+
+    &__pic{
+        height: 450px;
+        line-height: 0;
+        border-radius: 6px;
+        overflow: hidden;
+        @media screen and (min-width: 1024px) {
+            height: auto;
+        }
+        img{
+            height: 100%;
+        }
+    }
+    &__info{}
+}
+.seventh-part{
+    @media screen and (min-width: 1024px) {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        column-gap: 20px;
+    }
+    & + &{
+        margin-top: 30px;
+        @media screen and (min-width: 1024px) {
+
+            margin-top: 0px;
+        }
+    }
+    &__icon{
+        display: block;
+        margin: 0 auto 10px;
+        width: 80px;
+        flex-shrink: 0;
+        @media screen and (min-width: 1024px) {
+            margin: 0;
+            width: 60px;
+        }
+        @media screen and (min-width: 1640px) {
+            width: 80px;
+        }
+    }
+    &__title{
+        margin-bottom: 10px;
+        font-size: 20px;
+        color: rgb(32, 40, 46);
+        text-transform: uppercase;
+        line-height: 1.2;
+        text-align: center;   
+        font-weight: normal;
+        font-family: $dinProCond; 
+        @media screen and (min-width: 1024px) {
+            margin: 25px 0 10px;
+            text-align: start;   
+            font-size: 18px;
+        }
+        @media screen and (min-width: 1640px) {
+            margin-top: 30px;
+            font-size: 25px;
+        }
+    }
+    &__text{
+        font-size: 14px;
+        color: $white;
+        line-height: 1.2;
+        text-align: left;   
+        @media screen and (min-width: 1024px) {
+            font-size: 12px;
+        }
+        @media screen and (min-width: 1640px) {
+            font-size: 13px;
+        }
+    }
+}

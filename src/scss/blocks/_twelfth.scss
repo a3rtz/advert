@@ -1,0 +1,184 @@
+.twelfth{
+    padding: var(--smallPad) var(--container);
+    background-color: $black;
+    background-image: url(../../images/twelfth/bg.jpg);
+    background-size: 100% auto;
+    background-position: top center;
+    background-repeat: no-repeat;
+    &__title{
+        margin-bottom: 10px;
+        @media screen and (min-width: 1640px) {
+            margin-bottom: 15px;
+        }
+    }
+    &__descr{
+        margin-top: 30px;
+        font-size: 16px;
+        color: rgb(91, 91, 91);
+        text-align: center; 
+        @media screen and (min-width: 1024px) {
+            margin-top: 0;
+            font-size: 13px;
+        }
+        @media screen and (min-width: 1640px) {
+            font-size: 18px;
+        }
+    }
+    &__pic-con{
+        position: relative;
+        height: 230px;
+        @media screen and (min-width: 1024px) {
+            height: 455px;
+        }
+        @media screen and (min-width: 1640px) {
+            height: 615px;
+        }
+    }
+    &__pic{
+        position: absolute;
+        width: 380px;
+        top: -20px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        @media screen and (min-width: 1024px) {
+            width: 930px;
+            top: -60px;
+        }
+        @media screen and (min-width: 1640px) {
+            width: 1430px;
+            top: -100px;
+        }
+    }
+    &__content{
+        position: relative;
+        z-index: 5;
+        @media screen and (min-width: 1024px) {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: 200px;
+        }
+        @media screen and (min-width: 1640px) {
+            grid-template-columns: repeat(2, 500px);
+            // column-gap: 275px;
+        }
+    }
+    &__bundle{
+        & + &{
+            margin-top: 80px;
+            @media screen and (min-width: 1024px) {
+                margin-top: 0px;
+
+            }
+        }
+    }
+}
+.bundle{
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    &__arrow{
+        display: none;
+        margin-bottom: 15px;
+        width: 35px;
+        transform-origin: center;
+        transform: rotate(-90deg);
+        @media screen and (min-width: 1024px) {
+            display: block;
+        }
+        @media screen and (min-width: 1640px) {
+            margin-bottom: 20px;
+            width: 45px;
+        }
+    }
+    &__title{
+        // margin-top: 25px;
+        font-family: $dinProCond;
+        font-size: 30px;
+        color: $white;
+        text-transform: uppercase;
+        line-height: 40px;
+        @media screen and (min-width: 1024px) {
+            font-size: 20px;
+        }
+        @media screen and (min-width: 1640px) {
+            font-size: 28px;
+        }
+        &--big{
+            font-size: 40px;
+            @media screen and (min-width: 1640px) {
+                font-size: 50px;
+            }
+        }
+    }
+    &__list{
+        margin: 20px 0;
+        @media screen and (min-width: 1024px) {
+            margin: 15px 0 20px;
+
+        }
+        @media screen and (min-width: 1640px) {
+            margin-top: 25px;
+            margin-bottom: 30px;
+        }
+    }
+    &__item{
+        color: $white;
+        font-size: 13px;
+        @media screen and (min-width: 1024px) {
+            font-size: 12px;
+
+        }
+        @media screen and (min-width: 1640px) {
+            font-size: 16px;
+        }
+        & + &{
+            @media screen and (max-width: 1023px) {
+                margin-top: 5px;
+            }
+        }
+    }
+    &__price{
+        // margin-bottom: 30px;
+        font-family: $dinProCond;
+        font-weight: bold;
+        font-size: 30px;
+        color: $red;
+        text-transform: uppercase;
+        @media screen and (min-width: 1024px) {
+            font-size: 20px;
+        }
+        @media screen and (min-width: 1640px) {
+            font-size: 26px;
+        }
+        & + .bundle__title{
+            margin-top: 25px;
+            @media screen and (min-width: 1024px) {
+                margin-top: 30px;
+                
+            }
+            
+        }
+        & + .bundle__final{
+            margin-top: 40px;
+            @media screen and (min-width: 1024px) {
+                margin-top: 20px;
+            }
+        }
+    }
+    &__final{
+        width: fit-content;
+        margin-top: auto;
+        padding-top: 15px;
+        border-top: 1px solid $red;
+        color: $red;
+        font-family: $dinProCond;
+        font-size: 28px;
+        font-weight: bold;
+        text-transform: uppercase;
+        @media screen and (min-width: 1640px) {
+            font-size: 38px;
+        }
+    }
+
+}

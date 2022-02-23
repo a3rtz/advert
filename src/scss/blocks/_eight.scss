@@ -1,0 +1,10 @@
+.eighth{
+    padding: var(--bigPad) var(--container) var(--bigPad);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('../../images/eighth/eight-bg.jpg');
+    &__scroll{
+        margin-top: 80px;
+    }
+}

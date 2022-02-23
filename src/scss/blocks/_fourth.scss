@@ -1,0 +1,114 @@
+.fourth{
+    position: relative;
+    padding: var(--bigPad) var(--container);
+    background-color: #c6c6c6;
+    @media screen and (min-width: 1024px) {
+        padding: var(--pad) var(--container);
+    }
+    &__list{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top: 105px;
+        row-gap: 60px;
+        @media screen and (min-width: 1024px) {
+            grid-template-columns: repeat(3, 1fr);
+            column-gap: 30px;
+            margin-top: 105px;
+
+        }
+    }
+    &__scroll{
+        margin-top: 90px;
+    }
+    &__divider{
+        position: absolute;
+        bottom: -55px;
+        left: 0;
+        z-index: 5;
+        width: 100%;
+        transform-origin: center;
+        transform: rotate(180deg);
+    }
+}
+.element{
+    &__info{
+        position: relative;
+        width: fit-content;
+        margin: 0 auto 30px;
+        @media screen and (min-width: 1024px) {
+            margin: 0 auto 10px;
+        }
+    }
+    &__number{
+        position: absolute;
+        top: -75px;
+        left: -55px;
+        z-index: 0;
+        font-size: 160px;
+        font-weight: bold;
+        color: #dfdfdf;
+        @media screen and (min-width: 1024px) {
+            top: -30px;
+            left: -30px;
+            font-size: 120px;
+        }
+        @media screen and (min-width: 1640px) {
+            top: -80px;
+            left: -10px;
+            font-size: 160px;
+        }
+    }
+    &__icon{
+        position: relative;
+        display: block;
+        margin: 0 auto;
+        width: 200px;
+        @media screen and (min-width: 1024px) {
+            width: 150px;
+            height: 140px;
+        }
+        @media screen and (min-width: 1640px) {
+            width: 200px;
+        }
+        &--small{
+            width: 120px;
+            @media screen and (min-width: 1024px) {
+                width: 95px;
+            }
+            @media screen and (min-width: 1640px) {
+                width: 120px;
+            }
+        }
+    }
+    &__title{
+        margin-bottom: 10px;
+        color: rgb(32, 40, 46);
+        text-transform: uppercase;
+        line-height: 1.2;
+        text-align: center;   
+        font-family: $dinProCond;
+        font-size: 20px;
+        @media screen and (min-width: 1024px) {
+            font-size: 18px;
+            
+        }
+        @media screen and (min-width: 1640px) {
+            padding: 0 10px;
+            font-size: 24px;
+        }
+    }
+    &__descr{
+        color: rgb(57, 68, 78);
+        line-height: 1.2;
+        text-align: center; 
+        font-size: 18px;
+        @media screen and (min-width: 1024px) {
+            font-size: 13px;
+
+        }
+        @media screen and (min-width: 1640px) {
+            font-size: 19px;
+        }
+
+    }
+}

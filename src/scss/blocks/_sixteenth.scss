@@ -1,0 +1,103 @@
+.sixteenth{
+    padding: var(--pad) var(--container) var(--smallPad);
+    background-image: url(../../images/sixteenth/bg.jpg);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: top center;
+    &__faq{
+        margin-top: 40px;
+    }
+}
+.faq{
+    &--expand{
+        .faq__arrow{
+            transform: none;
+            fill: $red;
+        }
+        .faq__title{
+            color: $red;
+        }
+        .faq__content{
+            max-height: 9999px;
+        }
+
+    }
+    &__header{
+        position: relative;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px 10px;
+        background-color: #e7e7e7;
+        @media screen and (min-width: 1024px) {
+            padding: 15px 30px;
+
+        }
+        @media screen and (min-width: 1640px) {
+            padding: 20px 40px;
+        }
+        &:hover{
+            .faq__title{
+                color: $red;
+            }
+            .faq__arrow{
+                fill: $red;
+            }
+        }
+    }
+    &__title{
+        font-size: 18px;
+        transition: var(--trans);
+        @media screen and (min-width: 1024px) {
+            font-size: 14px;
+
+        }
+        @media screen and (min-width: 1640px) {
+            font-size: 19px;
+        }
+    }
+    &__btn{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 5;
+        cursor: pointer;
+    }
+    &__arrow{
+        width: 16px;
+        transform-origin: center;
+        transform: rotate(180deg);
+        fill: $black;
+        transition: var(--trans);
+        flex-shrink: 0;
+        @media screen and (min-width: 1024px) {
+            width: 14px;
+
+        }
+        @media screen and (min-width: 1640px) {
+            width: 18px;
+        }
+    }
+    &__content{
+        max-height: 0;
+        background-color: $white;
+        transition: var(--trans);
+        overflow: hidden;
+    }
+    &__text{
+        padding: 25px 0;
+        font-size: 18px;
+        @media screen and (min-width: 1024px) {
+            font-size: 14px;
+
+        }
+        @media screen and (min-width: 1640px) {
+            font-size: 18px;
+        }
+    }
+}

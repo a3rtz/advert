@@ -1,0 +1,171 @@
+.seventeenth{
+    position: relative;
+    padding: var(--bigPad) var(--container) var(--pad);
+    background-color: #616161;
+    &__title{
+        @media screen and (max-width: 1023px) {
+            margin-bottom: 70px;
+            font-size: 36px;
+        }
+    }
+    &__list{
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr;
+        max-width: 315px;
+        margin: 30px auto 0;
+        @media screen and (min-width: 1024px) {
+            grid-template-columns: repeat(5, 1fr);
+            max-width: unset;
+
+        }
+        @media screen and (min-width: 1640px) {
+            margin-top: 50px;
+        }
+    }
+    &__bg{
+        // display: none;
+        position: absolute;
+        top: -35px;
+        left: 2px;
+        z-index: 0;
+        // height: 710px;
+        width: 115px;
+        @media screen and (min-width: 1024px) {
+            top: 16px;
+            left: 50%;
+            transform: translate(-50%, 0);
+            width: 755px;
+        }
+
+        @media screen and (min-width: 1640px) {
+            width: 1020px;
+        }
+        img{
+            object-fit: contain;
+        }
+    }
+    &__item{
+        & + &{
+            @media screen and (max-width: 1023px) {
+                margin-top: 160px;
+            }
+        }
+    }
+    &__info{
+        margin-top: 40px;
+    }
+    &__descr{
+        color: $white;
+        font-size: 16px;
+        text-align: center;
+        @media screen and (min-width: 1024px) {
+            font-size: 11px;
+            text-align: end;
+            max-width: 570px;
+            padding-right: 20px;
+            border-right: 5px solid $red;
+
+        }
+        @media screen and (min-width: 1640px) {
+            font-size: 14px;
+            max-width: 760px;
+        }
+    }
+    &__arrow-con{
+        position: relative;
+        @media screen and (max-width: 1023px) {
+            display: none;
+        }
+    }
+    &__arrow{
+        position: absolute;
+        bottom: -135px;
+        right: -250px;
+        width: 480px;
+        @media screen and (min-width: 1640px) {
+            width: 600px;
+            right: -320px;
+        }
+    }
+}
+.schema{
+    position: relative;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    column-gap: 55px;
+    padding-left: 15px;
+    @media screen and (min-width: 1024px) {
+        display: block;
+        padding-left: 0;
+    }
+    &__number{
+        position: absolute;
+        top: -30px;
+        left: 75px;
+        display: flex;
+        flex-flow: row;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        border-radius: 50%;
+        aspect-ratio: 1;
+        background-color: $red;
+        color: $white;
+        font-weight: bold;
+        font-size: 20px;
+        @media screen and (min-width: 1024px) {
+            position: static;
+            margin: 0 auto 5px;
+            width: 30px;
+            font-size: 18px;
+
+        }
+        @media screen and (min-width: 1640px) {
+            width: 40px;
+            font-size: 20px;
+        }
+    }
+    &__icon{
+        display: block;
+        width: 40px;
+        flex-shrink: 0;
+        @media screen and (min-width: 1024px) {
+            margin: 0 auto 5px;
+            width: 37px;
+            height: 37px;
+        }
+        @media screen and (min-width: 1640px) {
+            width: 50px;
+            height: 50px;
+        }
+        &--middle{
+            transform: translate(8px, 0);
+            @media screen and (min-width: 1024px) {
+                transform: translate(5px, 0);
+            }
+            
+            @media screen and (min-width: 1640px) {
+                transform: none;
+            }
+        }
+    }
+    &__title{
+        color: $white;
+        font-family: $dinProCond;
+        text-transform: uppercase;
+        font-size: 18px;
+        text-align: start;
+        @media screen and (min-width: 1024px) {
+            margin-top: 30px;
+            font-size: 13px;
+            text-align: center;
+        }
+        @media screen and (min-width: 1640px) {
+            margin-top: 45px;
+            font-size: 18px;
+        }
+    }
+}

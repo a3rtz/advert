@@ -1,0 +1,200 @@
+.divider{
+    position: absolute;
+    left: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 10;
+    min-width: 1920px;
+    width: 100%;
+    // background-color: rgba($color: #ff0000, $alpha: 0.5);
+    line-height: 0;
+    @media screen and (min-width: 1024px) {
+        min-width: unset;
+    }
+    &--first{
+        bottom: 0;
+        .divider__scroll{
+            top: 30px;
+        }
+    }
+    &--second{
+        .divider__pic{
+            transform: rotate(180deg);
+        }
+        .divider__scroll{
+            top: 60px;
+        }
+    }
+    &--third{
+        bottom: -78px;
+        .divider__scroll{
+            top: 60px;
+        }
+    }
+    &--fourth{
+        bottom: -2px;
+        .divider__scroll{
+            top: 40px;
+        }
+        .divider__pic{
+            transform: rotate(180deg);
+        }
+    }
+    &--fivth{
+        bottom: -78px;
+        .divider__pic{
+        }
+        .divider__scroll{
+            top: 55px;
+        }
+    }
+    &--sixth{
+        bottom: -2px;
+        .divider__pic{
+        }
+        .divider__scroll{
+            top: 40px;
+        }
+        .divider__pic{
+            // transform: rotate(180deg);
+        }
+    }
+    &--seventh{
+        bottom: -78px;
+        .divider__pic{
+        }
+        .divider__scroll{
+            top: 60px;
+        }
+        .divider__pic{
+            transform: rotate(180deg);
+        }
+    }
+    &--nineth{
+        top: -78px;
+        .divider__pic{
+            // transform: rotate(180deg);
+        }
+        .divider__scroll{
+            top: 35px;
+        }
+    }
+    &--tenth{
+        top: -78px;
+        .divider__pic{
+            // transform: rotate(180deg);
+        }
+        .divider__scroll{
+            top: 35px;
+        }
+    }
+    &--eleventh{
+        top: -2px;
+        .divider__pic{
+            transform: rotate(180deg);
+        }
+        .divider__scroll{
+            top: 60px;
+        }
+    }
+    &--twelfth{
+        top: -78px;
+        .divider__pic{
+            transform: rotate(180deg);
+        }
+        .divider__scroll{
+            top: 35px;
+        }
+    }
+    &--thirteenth{
+        top: -2px;
+        .divider__pic{
+            // transform: rotate(180deg);
+        }
+        .divider__scroll{
+            top: 60px;
+        }
+    }
+    &--fourteenth{
+        top: -2px;
+        .divider__pic{
+            transform: rotate(180deg);
+        }
+        .divider__scroll{
+            top: 60px;
+        }
+    }
+    &--fifteenth{
+        top: -2px;
+        .divider__pic{
+            transform: rotate(180deg);
+        }
+        .divider__scroll{
+            top: 60px;
+        }
+    }
+    &--sixteenth{
+        top: -78px;
+        .divider__pic{
+            // transform: rotate(180deg);
+        }
+        .divider__scroll{
+            top: 35px;
+        }
+    }
+    &--seventeenth{
+        top: -2px;
+        .divider__pic{
+            transform: rotate(180deg);
+        }
+        .divider__scroll{
+            top: 35px;
+        }
+    }
+    &--eighteenth{
+        top: -78px;
+        .divider__pic{
+            transform: rotate(180deg);
+        }
+        .divider__scroll{
+            top: 35px;
+        }
+    }
+    &--footer{
+        top: -72px;
+        .divider__pic{
+        }
+        .divider__scroll{
+            top: 35px;
+        }
+    }
+    &__pic{
+        transform-origin: center;
+    }
+    &__scroll{
+        position: absolute;
+        top: 10px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        z-index: 10;
+
+    }
+}
+.scroll-btn{
+    display: block;
+    margin: 0 auto;
+    width: 35px;
+    line-height: 0;
+    &:hover{
+        &__icon{
+            transform: scale(1.05);
+            transition: var(--trans);
+        }
+    }
+    @media screen and (max-width: 1023px) {
+        display: none;
+    }
+    @media screen and (min-width: 1640px) {
+        width: 40px;
+    }
+}

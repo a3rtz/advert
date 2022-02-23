@@ -1,0 +1,106 @@
+.eighteenth{
+    padding: var(--smallPad) var(--container) var(--bigPad);
+    background-color: $black;
+    &__title{
+        margin-bottom: 30px;
+    }
+    &__descr{
+        margin-bottom: 25px;
+        font-size: 18px;
+        color: rgb(91, 91, 91);
+        text-align: center;
+        @media screen and (min-width: 1024px) {
+            font-size: 13px;
+        }
+        @media screen and (min-width: 1640px) {
+            margin-bottom: 30px;
+            font-size: 18px;
+        }
+    }
+    &__form{
+        margin-bottom: 55px;
+        @media screen and (min-width: 1640px) {
+            margin-bottom: 75px;
+        }
+
+    }
+    &__subtitle{
+        margin-bottom: 25px;
+        text-transform: uppercase;
+        font-size: 20px;
+        color: $red;
+        font-weight: normal;
+        text-transform: uppercase;
+        text-align: center;
+        @media screen and (min-width: 1024px) {
+            font-size: 16px;
+
+        }
+        @media screen and (min-width: 1640px) {
+            font-size: 22px;
+        }
+    }
+    &__copy{
+        margin-bottom: 25px;
+        font-size: 17px;
+        text-align: center;
+        color: $white;
+        @media screen and (min-width: 1640px) {
+            font-size: 23px;
+        }
+    }
+    &__link-copy{
+        color: $white;
+        text-decoration: none;
+        transition: var(--trans);
+        &:hover{
+            color: $red;
+        }
+    }
+}
+.callback{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 30px;
+    @media screen and (min-width: 1024px) {
+        flex-flow: row nowrap;
+        column-gap: 20px;
+
+    }
+    @media screen and (min-width: 1640px) {
+        column-gap: 30px;
+    }
+    &__input{
+        width: 100%;
+        padding: 9px 15px;
+        font-size: 14px;
+        color: rgb(91, 91, 91);
+        text-align: left;          
+        background-color: #909090;
+        border-radius: 6px;
+        outline-color: $red;
+        outline-style: solid;
+        @media screen and (min-width: 1024px) {
+            width: 350px;
+        }
+        @media screen and (min-width: 1640px) {
+            width: 450px;
+            padding: 15px 30px;
+        }
+    }
+    &__submit{
+        font-size: 14px;
+        padding: 11px 55px;
+        width: 100%;
+        @media screen and (min-width: 1024px) {
+            width: auto;
+        }
+        @media screen and (min-width: 1640px) {
+            padding: 15px 80px;
+            font-size: 18px;
+        }
+    }
+
+}
