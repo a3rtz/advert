@@ -10,14 +10,26 @@
     visibility: hidden;
     opacity: 0;
     transition: var(--trans);
-    &--show{
+    &--form{
         overflow: hidden;
-        .modal{
+        .modal-form{
+            display: block;
             opacity: 1;
             visibility: visible;
-            &__content{
-                transform: none;
-            }
+        }
+        .modal__content{
+            transform: none;
+        }
+    }
+    &--video{
+        overflow: hidden;
+        .modal-video{
+            display: block;
+            opacity: 1;
+            visibility: visible;
+        }
+        .modal__content{
+            transform: none;
         }
     }
     &__bg{
@@ -42,5 +54,9 @@
         border-radius: 6px;
         transform: translate(0px, -100%);
         transition: var(--trans);
+        &--video{
+            width: 700px;
+            max-width: 80vw;
+        }
     }
 }

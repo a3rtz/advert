@@ -209,15 +209,30 @@ videoBtns.forEach(videoBtn => {
     })
 });
 let modalBtns = document.querySelectorAll('.open-modal');
-let modalBg = document.querySelector('.modal__bg');
+let modalBgs = document.querySelectorAll('.modal__bg');
 let modalSource = document.querySelector('[name="source"]');
 modalBtns.forEach(modalBtn => {
     modalBtn.addEventListener('click', modalToggle);
 });
-modalBg.addEventListener('click', modalToggle);
+modalBgs.forEach(modalBg => {
+    modalBg.addEventListener('click', modalClose);
+});
 function modalToggle(){
     modalSource.value = this.dataset.source;
-    document.body.classList.toggle('modal--show');
+    document.body.classList.toggle('modal--form');
+}
+function modalClose(){
+    if (document.body.classList.contains('modal--form'))
+    {
+        document.body.classList.remove('modal--form');
+    } else {
+        videoToggle();
+    }
+}
+let modalVideo = document.querySelector('.open-video');
+modalVideo.addEventListener('click', videoToggle);
+function videoToggle(){
+    document.body.classList.toggle('modal--video');
 }
 
 let expandBtns = document.querySelectorAll('.expand-rent');
