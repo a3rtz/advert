@@ -225,14 +225,21 @@ function modalClose(){
     if (document.body.classList.contains('modal--form'))
     {
         document.body.classList.remove('modal--form');
+    } else if (document.body.classList.contains('modal--video')) {
+        document.body.classList.remove('modal--video');
     } else {
-        videoToggle();
+        document.body.classList.remove('modal--video2');
     }
 }
 let modalVideo = document.querySelector('.open-video');
 modalVideo.addEventListener('click', videoToggle);
 function videoToggle(){
     document.body.classList.toggle('modal--video');
+}
+let modalVideo2 = document.querySelector('.open-video2');
+modalVideo2.addEventListener('click', videoToggle2);
+function videoToggle2(){
+    document.body.classList.toggle('modal--video2');
 }
 
 let expandBtns = document.querySelectorAll('.expand-rent');

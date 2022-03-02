@@ -32,6 +32,17 @@
             transform: none;
         }
     }
+    &--video2{
+        overflow: hidden;
+        .modal-video2{
+            display: block;
+            opacity: 1;
+            visibility: visible;
+        }
+        .modal__content{
+            transform: none;
+        }
+    }
     &__bg{
         position: absolute;
         top: 0;

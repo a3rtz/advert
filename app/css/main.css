@@ -1077,6 +1077,16 @@ a {
       -webkit-transform: none;
           -ms-transform: none;
               transform: none; }
+  .modal--video2 {
+    overflow: hidden; }
+    .modal--video2 .modal-video2 {
+      display: block;
+      opacity: 1;
+      visibility: visible; }
+    .modal--video2 .modal__content {
+      -webkit-transform: none;
+          -ms-transform: none;
+              transform: none; }
   .modal__bg {
     position: absolute;
     top: 0;
