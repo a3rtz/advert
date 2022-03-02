@@ -1043,6 +1043,9 @@ a {
       font-size: 18px;
       padding: 15px 55px; } }
 
+.open-pic {
+  cursor: pointer; }
+
 .modal {
   position: fixed;
   top: 0;
@@ -1076,7 +1079,9 @@ a {
     .modal--video .modal__content {
       -webkit-transform: none;
           -ms-transform: none;
-              transform: none; }
+              transform: none;
+      padding: 0;
+      background-color: transparent; }
   .modal--video2 {
     overflow: hidden; }
     .modal--video2 .modal-video2 {
@@ -1086,7 +1091,23 @@ a {
     .modal--video2 .modal__content {
       -webkit-transform: none;
           -ms-transform: none;
-              transform: none; }
+              transform: none;
+      padding: 0;
+      background-color: transparent; }
+  .modal--photo {
+    overflow: hidden; }
+    .modal--photo .modal-photo {
+      display: block;
+      opacity: 1;
+      visibility: visible; }
+    .modal--photo .modal__content {
+      -webkit-transform: none;
+          -ms-transform: none;
+              transform: none;
+      background-color: transparent;
+      max-width: 900px;
+      max-height: 70vh;
+      padding: 0; }
   .modal__bg {
     position: absolute;
     top: 0;
@@ -1104,6 +1125,7 @@ a {
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
+    width: 80vw;
     max-width: 500px;
     padding: 30px;
     background-color: rgba(0, 0, 0, 0.8);
@@ -1635,7 +1657,7 @@ a {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url("../images/first/first-bg.jpg"); }
+  background-image: url("../../images/first/first-bg.jpg"); }
   @media screen and (min-width: 1024px) {
     .first {
       padding: 30px var(--container) var(--pad);
@@ -2083,7 +2105,7 @@ a {
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url("../images/fivth/bg.jpg"); }
+  background-image: url("../../images/fivth/bg.jpg"); }
   .fivth__title {
     margin-bottom: 45px; }
     @media screen and (min-width: 1640px) {
@@ -2361,7 +2383,7 @@ a {
 .sixth {
   position: relative;
   padding: var(--pad) var(--container) var(--bigPad);
-  background-image: url("../images/sixth/sixth-bg.jpg");
+  background-image: url("../../images/sixth/sixth-bg.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; }
@@ -2541,7 +2563,7 @@ a {
     z-index: 1;
     width: 50px;
     height: 50px;
-    background-image: url("../images/fivth/lider.png");
+    background-image: url("../../images/fivth/lider.png");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover; }
@@ -2768,7 +2790,7 @@ a {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url("../images/eighth/eight-bg.jpg"); }
+  background-image: url("../../images/eighth/eight-bg.jpg"); }
   .eighth__scroll {
     margin-top: 80px; }
 
@@ -2820,6 +2842,10 @@ a {
     -webkit-column-gap: 30px;
        -moz-column-gap: 30px;
             column-gap: 30px; }
+
+@media screen and (min-width: 1024px) {
+  .video-slide .video-con__bg {
+    height: 450px; } }
 
 .video-con {
   position: relative;
@@ -3156,7 +3182,7 @@ a {
 .twelfth {
   padding: var(--smallPad) var(--container);
   background-color: #000;
-  background-image: url(../images/twelfth/bg.jpg);
+  background-image: url(../../images/twelfth/bg.jpg);
   background-size: 100% auto;
   background-position: top center;
   background-repeat: no-repeat; }
@@ -3333,7 +3359,7 @@ a {
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url("../images/thirteenth/bg.jpg"); }
+  background-image: url("../../images/thirteenth/bg.jpg"); }
   .thirteenth__title {
     margin-bottom: 40px; }
     @media screen and (min-width: 1024px) {
@@ -3531,7 +3557,7 @@ a {
   background-color: #000;
   background-size: cover;
   background-position: center;
-  background-image: url("../images/fifteenth/bg.jpg"); }
+  background-image: url("../../images/fifteenth/bg.jpg"); }
   @media screen and (min-width: 1024px) {
     .fifteenth {
       padding: var(--bigPad) var(--container);
@@ -3669,7 +3695,7 @@ a {
     width: 12px;
     height: 12px;
     background-repeat: no-repeat;
-    background-image: url("../images/fifteenth/arrow.png");
+    background-image: url("../../images/fifteenth/arrow.png");
     background-position: center;
     background-size: contain; }
     @media screen and (min-width: 1024px) {
@@ -3691,7 +3717,7 @@ a {
 
 .sixteenth {
   padding: var(--pad) var(--container) var(--smallPad);
-  background-image: url(../images/sixteenth/bg.jpg);
+  background-image: url(../../images/sixteenth/bg.jpg);
   background-size: 100% auto;
   background-repeat: no-repeat;
   background-position: top center; }
@@ -4101,7 +4127,7 @@ a {
       -ms-flex-align: center;
           align-items: center;
   padding: var(--pad) var(--container) 100px;
-  background-image: url("../images/footer/footer-bg.jpg");
+  background-image: url("../../images/footer/footer-bg.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat; }

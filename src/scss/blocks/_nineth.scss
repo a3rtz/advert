@@ -47,6 +47,11 @@
 .video-slide{
     &__video-con{
     }
+    .video-con__bg{
+        @media screen and (min-width: 1024px) {
+            height: 450px;
+        }
+    }
 }
 .video-con{
     position: relative;

@@ -30,6 +30,8 @@
         }
         .modal__content{
             transform: none;
+            padding: 0;
+            background-color: transparent;
         }
     }
     &--video2{
@@ -41,7 +43,25 @@
         }
         .modal__content{
             transform: none;
+            padding: 0;
+            background-color: transparent;
         }
+    }
+    &--photo{
+        overflow: hidden;
+        .modal-photo{
+            display: block;
+            opacity: 1;
+            visibility: visible;
+        }
+        .modal__content{
+            transform: none;
+            background-color: transparent;
+            max-width: 900px;
+            max-height: 70vh;
+            padding: 0;
+        }
+
     }
     &__bg{
         position: absolute;
@@ -59,6 +79,7 @@
         z-index: 5;
         margin: var(--pad) auto 0;
         width: fit-content;
+        width: 80vw;
         max-width: 500px;
         padding: 30px;
         background-color: rgba($color: $black, $alpha: 0.8);

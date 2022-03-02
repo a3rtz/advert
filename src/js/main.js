@@ -212,24 +212,17 @@ let modalBtns = document.querySelectorAll('.open-modal');
 let modalBgs = document.querySelectorAll('.modal__bg');
 let modalSource = document.querySelector('[name="source"]');
 modalBtns.forEach(modalBtn => {
-    modalBtn.addEventListener('click', modalToggle);
+    modalBtn.addEventListener('click', formToggle);
 });
 modalBgs.forEach(modalBg => {
     modalBg.addEventListener('click', modalClose);
 });
-function modalToggle(){
+function formToggle(){
     modalSource.value = this.dataset.source;
     document.body.classList.toggle('modal--form');
 }
 function modalClose(){
-    if (document.body.classList.contains('modal--form'))
-    {
-        document.body.classList.remove('modal--form');
-    } else if (document.body.classList.contains('modal--video')) {
-        document.body.classList.remove('modal--video');
-    } else {
-        document.body.classList.remove('modal--video2');
-    }
+    document.body.classList.remove(document.body.classList);
 }
 let modalVideo = document.querySelector('.open-video');
 modalVideo.addEventListener('click', videoToggle);
@@ -243,12 +236,22 @@ function videoToggle2(){
 }
 
 let expandBtns = document.querySelectorAll('.expand-rent');
-console.log(expandBtns);
 expandBtns.forEach(expandBtn => {
     expandBtn.addEventListener('click', expandRent);
 });
 function expandRent(){
     this.classList.toggle('rent-more--expand');
-    console.log(this.nextElementSibling.classList);
     this.nextElementSibling.classList.toggle('show');
+}
+
+let openPhotos = document.querySelectorAll('.open-pic'),
+bigPhoto = document.querySelector('.photo-big'),
+modalPhoto = document.querySelector('.modal-photo');
+openPhotos.forEach(openPhoto => {
+    openPhoto.addEventListener('click', showPhoto);
+});
+function showPhoto(){
+    document.body.classList.add('modal--photo');
+    console.log(this.src);
+    bigPhoto.src = this.src;
 }
