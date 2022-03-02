@@ -79,6 +79,9 @@
                 width: 120px;
             }
         }
+        img{
+            object-fit: contain;
+        }
     }
     &__title{
         margin-bottom: 10px;
