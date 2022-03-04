@@ -246,6 +246,7 @@ function expandRent(){
 
 let openPhotos = document.querySelectorAll('.open-pic'),
 bigPhoto = document.querySelector('.photo-big'),
+closeBtn = document.querySelector('.modal__close'),
 modalPhoto = document.querySelector('.modal-photo');
 openPhotos.forEach(openPhoto => {
     openPhoto.addEventListener('click', showPhoto);
@@ -255,3 +256,4 @@ function showPhoto(){
     console.log(this.src);
     bigPhoto.src = this.src;
 }
+closeBtn.addEventListener("click", modalClose);

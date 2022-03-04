@@ -42,6 +42,10 @@
         justify-content: center;
         column-gap: 30px;
     }
+    &__pic-slide{
+        height: 260px;
+        object-fit: cover;
+    }
 
 }
 .video-slide{

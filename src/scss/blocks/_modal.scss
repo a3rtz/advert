@@ -91,4 +91,12 @@
             max-width: 80vw;
         }
     }
+    &__close{
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        font-size: 40px;
+        font-family: sans-serif;
+        // color: #fff;
+    }
 }
