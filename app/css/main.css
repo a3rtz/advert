@@ -2717,13 +2717,10 @@ a {
     line-height: 0;
     border-radius: 6px;
     overflow: hidden; }
-    @media screen and (min-width: 1024px) {
-      .seventh-slide__pic {
-        height: auto; } }
     .seventh-slide__pic img {
       height: 100%;
-      -o-object-fit: contain;
-         object-fit: contain; }
+      -o-object-fit: cover;
+         object-fit: cover; }
 
 @media screen and (min-width: 1024px) {
   .seventh-part {
